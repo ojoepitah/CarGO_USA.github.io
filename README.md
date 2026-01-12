@@ -27,12 +27,12 @@ The dataset includes a wide range of attributes grouped into the following categ
  - **Customer Attributes**
 
 | Customer Name| Gender| Annual Income| Phone| 
-|--------|------|-----------|----------------------|
+|--------------|-------|--------------|------|
 
  - **Vehicle Information**
 
 | Company| Model| Body Style| Engine| Transmission| Color|
-|--------|------|-----------|----------------------|------|-----------|
+|--------|------|-----------|-------|-------------|------|
 
  - **Dealer & Location Details**
 
@@ -46,7 +46,7 @@ These fields enable multi-dimensional analysis across time, vehicle characterist
 To enable robust time-intelligence analysis, a dedicated Date Table was created using DAX.  The Date table includes the following derived attributes:
 
 | Year| Month| MonthNo.| WeekNo.| Year Week| Year WeekSort| 
-|--------|------|-----------|----------------------|------|-----------|
+|-----|------|---------|--------|----------|--------------|
 
 This structure supports:
  - YTD, MTD, and YOY calculations

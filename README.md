@@ -1,4 +1,10 @@
 # Project Overview
+##Table of Content
+
+
+
+
+
 
 ## Project Objective
 The objective of this project was to design and develop a dynamic and interactive Car Sales Dashboard in Power BI that provides real-time visibility into critical sales KPIs. The dashboard enables stakeholders to:
@@ -64,7 +70,7 @@ To enable robust time-intelligence analysis, a dedicated Date Table was created 
 
 | Column Name   | Description |
 |---------------|-------------|
-| Year| 2022,2023
+| Year| 2022, 2023
 | Month| Car Purchase Month of the Year |
 | MonthNo.| Jan=1, Feb=2, etc.
 |WeekNo.| from 1 to 52

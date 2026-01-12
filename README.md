@@ -19,25 +19,42 @@ The analysis is based on a structured car sales dataset capturing detailed trans
 ### Key Data Fields
 The dataset includes a wide range of attributes grouped into the following categories:
 
- - **Sales & Transaction Details**
+#### Sales & Transaction Details
 
-| Car_id | Date | Price ($) | Units sold (derived) |
-|--------|------|-----------|----------------------|
+| Column Name | Description |
+|-------------|-------------|
+| Car_id | Unique identifier for each vehicle |
+| Date | Transaction date |
+| Price ($) | Sale price per vehicle |
+| Units Sold | Derived sales quantity |
 
- - **Customer Attributes**
+#### Customer Attributes
 
-| Customer Name| Gender| Annual Income| Phone| 
-|--------------|-------|--------------|------|
+| Column Name     | Description |
+|-----------------|-------------|
+| Customer Name   | Full name of customer |
+| Gender          | Gender (Male/Female) |
+| Annual Income   | Customer’s reported annual income |
+| Phone           | Customer contact phone number |
 
- - **Vehicle Information**
+#### Vehicle Information
 
-| Company| Model| Body Style| Engine| Transmission| Color|
-|--------|------|-----------|-------|-------------|------|
+| Column Name   | Description |
+|---------------|-------------|
+| Company       | Brand of the vehicle (e.g., Ford, BMW, Nissan) |
+| Model         | Specific vehicle model name |
+| Body Style    | e.g Sedan, SUV, Hatchback, Passenger |
+| Engine        | DoubleÂ Overhead Camshaft, Overhead Camshaft |
+| Transmission  | Manual or Automatic |
+| Color         | Exterior colour of the vehicle at the time of sale |
 
- - **Dealer & Location Details**
+#### Dealer & Location Details
 
-|Dealer_Name| Dealer_No| Dealer_Region| 
-|--------|------|-----------|
+| Column Name   | Description |
+|---------------|-------------|
+| Dealer_Name   | Dealership of Purchase |
+| Dealer_No     | Unique identifier assigned to each dealer |
+| Dealer_Region | sales territory where the dealer operates |
 
 These fields enable multi-dimensional analysis across time, vehicle characteristics, customer segments, and dealer regions.
 
@@ -45,8 +62,15 @@ These fields enable multi-dimensional analysis across time, vehicle characterist
 
 To enable robust time-intelligence analysis, a dedicated Date Table was created using DAX.  The Date table includes the following derived attributes:
 
-| Year| Month| MonthNo.| WeekNo.| Year Week| Year WeekSort| 
-|-----|------|---------|--------|----------|--------------|
+| Column Name   | Description |
+|---------------|-------------|
+| Year| 2022,2023
+| Month| Car Purchase Month of the Year |
+| MonthNo.| Jan=1, Feb=2, etc.
+|WeekNo.| from 1 to 52
+| Year Week| 2022-W1 to 2022-W52 and 2023-W1 to 2023-W52 |
+| Year WeekSort| 202201 to 202252, 202301 to 202352 for sorting purpose |
+
 
 This structure supports:
  - YTD, MTD, and YOY calculations
@@ -86,50 +110,48 @@ The analysis indicates that while sales growth was strong across all dealerships
 
 ### Analysis Findings
 
-1) **Strong Year-over-Year Sales Growth:**
+**1) Strong Year-over-Year Sales Growth:**
 Total sales increased by $70.8M compared to the previous year, representing a 23.59% YOY growth rate, indicating a significant overall improvement in sales performance.
 
-2) **Decline in Average Vehicle Price:**
+**2) Decline in Average Vehicle Price:**
 Despite the increase in total sales, the average selling price declined by 0.79%, suggesting that revenue growth was primarily driven by higher sales volume rather than increased pricing.
 
-3) **Increase in Units Sold:**
+**3) Increase in Units Sold:**
 A total of 2.62K more vehicles were sold compared to last year, reflecting a 24.57% increase in units sold, reinforcing the strong demand observed during the year.
 
-4) **Weekly Sales Performance Peaks:**
+**4) Weekly Sales Performance Peaks:**
 Week 37 recorded the highest sales of the year, generating more revenue than any other week. Sales volumes in weeks 46, 48, 49, and 50 were also comparably high. This pattern suggests the presence of effective sales strategies, promotions, or market conditions during these periods that could be analysed and replicated to drive future growth.
 
-5) **Body Style Performance:**
+**5) Body Style Performance:**
 SUVs were the top-performing body style, contributing nearly $100M in total sales, followed closely by Hatchbacks with approximately $83M. In contrast, Hardtops underperformed, indicating a potential need to reassess inventory strategy or customer demand for this category.
 
-6) **Colour Preferences:**
+**6) Colour Preferences:**
 Pale White vehicles consistently generated the highest sales across both years, highlighting a clear customer preference. Conversely, Red vehicles underperformed, suggesting lower demand or potential pricing and marketing challenges.
 
-7) **Dealer-Level Performance Variation:**
+**7) Dealer-Level Performance Variation:**
 Dealers in Austin and Janesville achieved the strongest sales performance during the year. In contrast, Middlestown, Pasco, and Greensville lagged behind, indicating opportunities for targeted support, strategy optimisation, or resource reallocation in these regions.
 
-8) **Manufacturer Sales Trends:**
+**8) Manufacturer Sales Trends:**
 Chevrolet emerged as the top-selling brand, followed closely by Dodge, a trend consistent across most dealerships. However, in Greensville, Middlestown, and Scottside, Ford outperformed Dodge, highlighting regional differences in brand preference.
 
-9) **Pricing vs Volume Dynamics Across Dealerships:**
+**9) Pricing vs Volume Dynamics Across Dealerships:**
 All dealerships recorded positive YOY sales growth ranging from 7.54% to 32.39%. However, YOY average price growth varied significantly, ranging from -7.85% to 4.11%. This suggests that some dealerships achieved higher sales volumes by selling at lower average prices, potentially reflecting differences in sales strategies, discounting practices, or salesperson effectiveness.
 
 ## Recommendations
 Based on this analysis, I recommend that by combining inventory optimisation, pricing refinement, and region-specific strategies, CarGO USA can sustain sales growth while improving profitability and operational consistency across dealerships.
 
 Here’s how you can make this happen;
-1) **Replicate High-Performing Weekly Sales Strategies:**
-Analyse sales activities, promotions, staffing levels, and inventory availability during Week 37 and Weeks 46, 48, 49, and 50, then replicate successful tactics during lower-performing periods.
-These weeks consistently generated the highest revenue, indicating that specific operational or promotional factors positively influenced sales performance.
 
-2) **Optimise Pricing Strategy Without Sacrificing Volume:**
-Review discounting and pricing practices across dealerships, particularly where average prices declined despite strong sales growth, to identify opportunities to improve margins without reducing demand.
-Sales growth was driven primarily by increased units sold rather than higher prices, suggesting room to refine pricing strategies for better profitability.
+**1) Replicate High-Performing Weekly Sales Strategies:**
+Analyse sales activities, promotions, staffing levels, and inventory availability during Week 37 and Weeks 46, 48, 49, and 50, then replicate successful tactics during lower-performing periods. These weeks consistently generated the highest revenue, indicating that specific operational or promotional factors positively influenced sales performance.
 
-3) **Align Marketing Efforts With Customer Colour Preferences:**
-Focus marketing campaigns and showroom availability on high-demand colours, particularly Pale White, while evaluating whether underperforming colours such as Red require pricing adjustments or reduced stock levels.
-Colour-based sales analysis shows consistent customer preferences that can be leveraged to improve conversion rates and reduce slow-moving inventory.
+**2) Optimise Pricing Strategy Without Sacrificing Volume:**
+Review discounting and pricing practices across dealerships, particularly where average prices declined despite strong sales growth, to identify opportunities to improve margins without reducing demand. Sales growth was driven primarily by increased units sold rather than higher prices, suggesting room to refine pricing strategies for better profitability.
 
-4) **Strengthen Underperforming Dealer Regions:**
+**3) Align Marketing Efforts With Customer Colour Preferences:**
+Focus marketing campaigns and showroom availability on high-demand colours, particularly Pale White, while evaluating whether underperforming colours such as Red require pricing adjustments or reduced stock levels. Colour-based sales analysis shows consistent customer preferences that can be leveraged to improve conversion rates and reduce slow-moving inventory.
+
+**4) Strengthen Underperforming Dealer Regions:**
 Provide targeted support to Middlestown, Pasco, and Greensville dealerships through:
    - Sales training
    - Performance benchmarking
@@ -137,7 +159,7 @@ Provide targeted support to Middlestown, Pasco, and Greensville dealerships thro
 
    These regions consistently underperformed relative to others, indicating opportunities for improvement through targeted intervention.
 
-5) **Leverage Best-Practice Dealerships as Performance Benchmarks:**
+**5) Leverage Best-Practice Dealerships as Performance Benchmarks:**
 Use high-performing dealerships such as Austin and Janesville as benchmarks to:
    - Identify successful sales tactics
    - Share best practices across other regions
@@ -145,13 +167,11 @@ Use high-performing dealerships such as Austin and Janesville as benchmarks to:
 
    These dealerships demonstrated strong and consistent sales performance, making them ideal reference points for improving overall business results.
 
-7) Adjust Brand Strategy by Region:
-Align manufacturer partnerships and promotional strategies with regional brand preferences, particularly in areas where Ford outperforms Dodge, such as Greensville, Middlestown, and Scottside.
-Brand performance varies by region, suggesting that a uniform national strategy may not be optimal.
+**6) Adjust Brand Strategy by Region:**
+Align manufacturer partnerships and promotional strategies with regional brand preferences, particularly in areas where Ford outperforms Dodge, such as Greensville, Middlestown, and Scottside. Brand performance varies by region, suggesting that a uniform national strategy may not be optimal.
 
-8) Balance Sales Volume With Salesperson Effectiveness:
-Investigate whether dealerships with declining average prices are compensating through discount-driven sales and assess the role of salesperson effectiveness in these outcomes.
-Wide variation in YOY average price growth suggests differences in negotiation strategies, discounting behaviour, and sales execution.
+**7) Balance Sales Volume With Salesperson Effectiveness:**
+Investigate whether dealerships with declining average prices are compensating through discount-driven sales and assess the role of salesperson effectiveness in these outcomes. Wide variation in YOY average price growth suggests differences in negotiation strategies, discounting behaviour, and sales execution.
 
 ## Tools & Technologies Used
  - Power BI
@@ -164,16 +184,6 @@ Wide variation in YOY average price growth suggests differences in negotiation s
  - Analysis
  - Visual storytelling
  - Business reasoning
-
-
-
-
-
-
-
-
- 
-
 
 
 

@@ -121,6 +121,8 @@ This structure supports:
 - Cardinality: Many-to-One
 - Cross-filter direction: Single
 
+![Relationship](Relationship.JPG)
+
 This modelling approach enables accurate time-based calculations while avoiding ambiguity and performance issues.
 
 ## Data Cleaning and Preparation
@@ -143,6 +145,8 @@ Approximately 250 records contained invalid values in the Model column where dat
 
 ## Key Insights and Findings
 
+![KPIs](KPIs.JPG)
+
 **1) Strong Year-over-Year Sales Growth:**
 Total sales increased by $70.8M compared to the previous year, representing a 23.59% YOY growth rate, indicating a significant overall improvement in sales performance.
 
@@ -151,6 +155,8 @@ Despite the increase in total sales, the average selling price declined by 0.79%
 
 **3) Increase in Units Sold:**
 A total of 2.62K more vehicles were sold compared to last year, reflecting a 24.57% increase in units sold, reinforcing the strong demand observed during the year.
+
+![Weekly Performance](Weekly.JPG)
 
 **4) Weekly Sales Performance Peaks:**
 Week 37 recorded the highest sales of the year, generating more revenue than any other week. Sales volumes in weeks 46, 48, 49, and 50 were also comparably high. This pattern suggests the presence of effective sales strategies, promotions, or market conditions during these periods that could be analysed and replicated to drive future growth.

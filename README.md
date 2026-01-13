@@ -1,9 +1,39 @@
 # Project Overview
 ##Table of Content
+- [Excecutive Summary](#excecutive-summary)
+- [Overall Insight and Findings](#overall-insight-and-findings)
+- [Project Objective](#project-objective)
+- [Data Overview](#data-overview)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Key Insights and Findings](#key-insights-and-findings)
+- [Recommendations](#recommendations)
+- [Tools and Technologies Used](#tools-and-technologies-used)
+- [How This Project Demonstrates My Skills](#how-this-project-demonstrates-my-skills)
 
 
+## Excecutive Summary
+Using two years of sales data (2022–2023), the dashboard tracks key metrics such as YTD, MTD, YOY, and PTYD sales, helping stakeholder quickly understand trends and make informed decisions.
 
+Derived insight showed strong year-over-year growth driven mainly by increased sales volume, along with clear customer preferences by brand, body style, and colour. It also reveals performance differences across regions, helping identify high-performing dealerships and areas that need improvement. 
 
+From a technical standpoint, the project demonstrates solid data modelling, time-intelligence DAX, and the use of a custom Date table to support flexible trend analysis. Overall, it shows how raw sales data can be transformed into practical insights that support better planning and performance improvement.
+
+## Overall Insight and Findings:
+The analysis indicates that while sales growth was strong across all dealerships, performance was largely driven by increased volume rather than pricing gains. 
+
+Variations in pricing behaviour and regional performance present opportunities to optimise sales strategies, improve underperforming regions, and replicate successful practices across the business.
+ ### Key Findings include;
+ 1) Strong Year-over-Year Sales Growth
+ 2) Decline in Average Vehicle Price
+ 3) Increase in Units Sold
+ 4) Weekly Sales Performance Peaks
+ 5) Body Style Performance
+ 6) Colour Preferences
+ 7) Dealer-Level Performance Variation
+ 8) Manufacturer Sales Trends
+ 9) Pricing vs Volume Dynamics Across Dealerships
+
+[Jump to Insights and Findings Details](#key-insights-and-findings)
 
 
 ## Project Objective
@@ -25,7 +55,7 @@ The analysis is based on a structured car sales dataset capturing detailed trans
 ### Key Data Fields
 The dataset includes a wide range of attributes grouped into the following categories:
 
-#### Sales & Transaction Details
+#### Sales and Transaction Details
 
 | Column Name | Description |
 |-------------|-------------|
@@ -54,7 +84,7 @@ The dataset includes a wide range of attributes grouped into the following categ
 | Transmission  | Manual or Automatic |
 | Color         | Exterior colour of the vehicle at the time of sale |
 
-#### Dealer & Location Details
+#### Dealer and Location Details
 
 | Column Name   | Description |
 |---------------|-------------|
@@ -91,17 +121,17 @@ This structure supports:
 
 This modelling approach enables accurate time-based calculations while avoiding ambiguity and performance issues.
 
-## Data Cleaning & Preparation
+## Data Cleaning and Preparation
 
 Before building the dashboard and analytical measures, to ensure accuracy, consistency, and analytical readiness, performed series of data cleaning and preparation process on the dataset.
 
-### Data Validation & Standardisation
+### Data Validation and Standardisation
 
  - Performed Initial checks to validate the integrity of the dataset
  - Verified that each record represented a single car sale using Car_id as a unique identifier
  - Ensured all date values fell within the expected analysis window (2022–2023)
 
-### Handling Missing & Inconsistent Data
+### Handling Missing and Inconsistent Data
 Several data quality issues typical of transactional datasets were addressed:
  - Checked for missing or null values in key analytical fields such as Date, Price ($), Company, and Dealer_Region
  - Removed or corrected incomplete records that could distort sales, unit, or average price metrics
@@ -109,12 +139,7 @@ Several data quality issues typical of transactional datasets were addressed:
 ### Limitation
 Approximately 250 records contained invalid values in the Model column where date values (e.g., 05/09/2020) were incorrectly recorded instead of car model names. Removing these rows risked biasing the analysis, so the data was retained.  As a result, the Model field was excluded from categorical visualisations but made available as a slicer, allowing users to filter the data without compromising the accuracy or clarity of dashboard visuals.
 
-## Key Insights & Findings
-
-### Overall Insight:
-The analysis indicates that while sales growth was strong across all dealerships, performance was largely driven by increased volume rather than pricing gains. Variations in pricing behaviour and regional performance present opportunities to optimise sales strategies, improve underperforming regions, and replicate successful practices across the business.
-
-### Analysis Findings
+## Key Insights and Findings
 
 **1) Strong Year-over-Year Sales Growth:**
 Total sales increased by $70.8M compared to the previous year, representing a 23.59% YOY growth rate, indicating a significant overall improvement in sales performance.
@@ -179,7 +204,7 @@ Align manufacturer partnerships and promotional strategies with regional brand p
 **7) Balance Sales Volume With Salesperson Effectiveness:**
 Investigate whether dealerships with declining average prices are compensating through discount-driven sales and assess the role of salesperson effectiveness in these outcomes. Wide variation in YOY average price growth suggests differences in negotiation strategies, discounting behaviour, and sales execution.
 
-## Tools & Technologies Used
+## Tools and Technologies Used
  - Power BI
  - Power Query
  - DAX

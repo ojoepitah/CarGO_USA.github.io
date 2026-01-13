@@ -1,5 +1,5 @@
 # Project Overview
-##Table of Content
+## Table of Content
 - [Excecutive Summary](#excecutive-summary)
 - [Overall Insight and Findings](#overall-insight-and-findings)
 - [Project Objective](#project-objective)
@@ -22,7 +22,9 @@ From a technical standpoint, the project demonstrates solid data modelling, time
 The analysis indicates that while sales growth was strong across all dealerships, performance was largely driven by increased volume rather than pricing gains. 
 
 Variations in pricing behaviour and regional performance present opportunities to optimise sales strategies, improve underperforming regions, and replicate successful practices across the business.
+
  ### Key Findings include;
+ 
  1) Strong Year-over-Year Sales Growth
  2) Decline in Average Vehicle Price
  3) Increase in Units Sold

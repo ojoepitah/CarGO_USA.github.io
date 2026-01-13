@@ -26,13 +26,21 @@ Variations in pricing behaviour and regional performance present opportunities t
 ### Key Findings include;
  
 1) Strong Year-over-Year Sales Growth
+
 2) Decline in Average Vehicle Price
+
 3) Increase in Units Sold
+
 4) Weekly Sales Performance Peaks
+
 5) Body Style Performance
+
 6) Colour Preferences
+
 7) Dealer-Level Performance Variation
+
 8) Manufacturer Sales Trends
+
 9) Pricing vs Volume Dynamics Across Dealerships
 
 [Jump to Insights and Findings Details](#key-insights-and-findings)

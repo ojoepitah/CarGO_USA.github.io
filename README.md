@@ -1,6 +1,6 @@
 # Project Overview
 ## Table of Content
-- [Excecutive Summary](#excecutive-summary)
+- [Executive Summary](#executive-summary)
 - [Overall Insight and Findings](#overall-insight-and-findings)
 - [Project Objective](#project-objective)
 - [Data Overview](#data-overview)
@@ -11,7 +11,7 @@
 - [How This Project Demonstrates My Skills](#how-this-project-demonstrates-my-skills)
 
 
-## Excecutive Summary
+## Executive Summary
 Using two years of sales data (2022–2023), the dashboard tracks key metrics such as YTD, MTD, YOY, and PTYD sales, helping stakeholder quickly understand trends and make informed decisions.
 
 Derived insight showed strong year-over-year growth driven mainly by increased sales volume, along with clear customer preferences by brand, body style, and colour. It also reveals performance differences across regions, helping identify high-performing dealerships and areas that need improvement. 
@@ -234,5 +234,6 @@ Wide variation in YOY average price growth suggests differences in negotiation s
  - Visual storytelling
  - Business reasoning
 
+[Jump to Top](#executive-summary)
 
 
